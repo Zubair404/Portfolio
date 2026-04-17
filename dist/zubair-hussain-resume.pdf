@@ -1,0 +1,73 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 896 >>
+stream
+BT
+/F1 18 Tf
+72 740 Td
+(Zubair Hussain - Senior Full Stack Developer) Tj
+0 -28 Td
+/F1 11 Tf
+(Specialization: ASP.NET Core, C#, React, Angular, TypeScript, REST APIs) Tj
+0 -18 Td
+(Professional Summary) Tj
+0 -18 Td
+(Senior Full Stack Developer focused on scalable business web applications,) Tj
+0 -14 Td
+(modern SPA architecture, performance optimization, and premium user experiences.) Tj
+0 -22 Td
+(Core Strengths) Tj
+0 -18 Td
+(React, Angular, JavaScript ES6+, TypeScript, HTML5, CSS3, Tailwind, Bootstrap,) Tj
+0 -14 Td
+(ASP.NET Core, Entity Framework, SQL Server, LINQ, Authentication, CI/CD.) Tj
+0 -22 Td
+(Experience) Tj
+0 -18 Td
+(Techstract - Senior Software Engineer - Leading frontend initiatives,) Tj
+0 -14 Td
+(enterprise React and Angular apps, UI performance improvements, mentoring.) Tj
+0 -18 Td
+(Terafort - Software Engineer - .NET applications, dashboards, business systems.) Tj
+0 -22 Td
+(Selected Projects) Tj
+0 -18 Td
+(Enterprise HR Management System, CRM Portal, E-Commerce Dashboard,) Tj
+0 -14 Td
+(Analytics Admin Panel, Portfolio Generator SaaS, Booking Management Platform.) Tj
+0 -22 Td
+(Contact) Tj
+0 -18 Td
+(Email: zubair.hussain.dev@email.com) Tj
+0 -14 Td
+(LinkedIn: linkedin.com/in/zubair-hussain) Tj
+0 -14 Td
+(GitHub: github.com/zubairhussain-dev) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001188 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1258
+%%EOF

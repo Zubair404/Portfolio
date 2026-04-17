@@ -1,71 +1,104 @@
-# Portfolio Website
+# Zubair Hussain Portfolio
 
-This project is a static personal portfolio website for Gohar Zafar. The refactor keeps the same design and frontend behavior while separating structure, styling, assets, and JavaScript into clearer folders.
+A modern React + Vite portfolio and resume website built for **Zubair Hussain**, positioned as a **Senior Full Stack Developer** with strong ASP.NET Core, React, Angular, and frontend architecture expertise.
+
+## Stack
+
+- React
+- JavaScript
+- Vite
+- Custom CSS
+
+## Key Features
+
+- Premium dark UI with glassmorphism panels and gradient accents
+- Scroll progress bar
+- Typing text effect
+- Animated counters
+- Scroll reveal transitions
+- Mobile-friendly responsive layout
+- Reusable component-based structure
+- Separate social links config
+- Downloadable resume file
+- Netlify-friendly frontend-only setup
 
 ## Project Structure
 
 ```text
 Portfolio/
-|-- assets/
-|   |-- documents/
-|   |   `-- cv.pdf
-|   `-- images/
-|       |-- profile.jpeg
-|       |-- trademe.png
-|       |-- kc.png
-|       |-- mylink.png
-|       |-- bwc.png
-|       |-- fscs.png
-|       `-- fgc.png
-|-- backend/
-|   |-- send_mail.php
-|   `-- PHPMailer/
-|-- components/
-|   `-- README.md
-|-- css/
-|   `-- styles.css
-|-- js/
-|   `-- main.js
-`-- index.html
+|-- public/
+|   `-- zubair-hussain-resume.pdf
+|-- src/
+|   |-- components/
+|   |   |-- AboutSection.jsx
+|   |   |-- BackToTopButton.jsx
+|   |   |-- ContactSection.jsx
+|   |   |-- ExperienceSection.jsx
+|   |   |-- Footer.jsx
+|   |   |-- HeroSection.jsx
+|   |   |-- Navbar.jsx
+|   |   |-- ProjectsSection.jsx
+|   |   |-- ScrollProgress.jsx
+|   |   |-- SectionHeading.jsx
+|   |   `-- SkillsSection.jsx
+|   |-- data/
+|   |   |-- portfolioData.js
+|   |   `-- socialLinks.js
+|   |-- hooks/
+|   |   |-- useCountUp.js
+|   |   `-- useTypingText.js
+|   |-- styles/
+|   |   `-- index.css
+|   |-- App.jsx
+|   `-- main.jsx
+|-- index.html
+|-- package.json
+`-- vite.config.js
 ```
 
-## Folder And File Purpose
+## File Purpose
 
-- [`index.html`](C:/Users/HP/Desktop/Projects/Github/Portfolio/index.html) is the single page entry point. It contains the semantic page structure and the major content sections:
-  - Navbar
-  - Hero
-  - About
-  - Experience
-  - Portfolio
-  - Contact
-  - Footer
-- [`css/styles.css`](C:/Users/HP/Desktop/Projects/Github/Portfolio/css/styles.css) contains all presentation logic that was previously inline in the page. It includes theme variables, layout rules, animations, responsive behavior, accessibility rules, and print styles.
-- [`js/main.js`](C:/Users/HP/Desktop/Projects/Github/Portfolio/js/main.js) contains all frontend behavior that was previously inline in the page. It handles:
-  - mobile navigation
-  - active nav state on scroll
-  - navbar scroll styling
-  - contact form submission through EmailJS
-  - reveal animations
-  - smooth scrolling
-  - external link click feedback
-  - lazy-loading support
-  - hero parallax effect
-- [`assets/images`](C:/Users/HP/Desktop/Projects/Github/Portfolio/assets/images) stores profile and project imagery used by the page.
-- [`assets/documents`](C:/Users/HP/Desktop/Projects/Github/Portfolio/assets/documents) stores downloadable files such as the CV.
-- [`backend/send_mail.php`](C:/Users/HP/Desktop/Projects/Github/Portfolio/backend/send_mail.php) is the PHP mail handler included with the project.
-- [`backend/PHPMailer`](C:/Users/HP/Desktop/Projects/Github/Portfolio/backend/PHPMailer) contains the PHPMailer dependency used by the PHP mail handler.
-- [`components`](C:/Users/HP/Desktop/Projects/Github/Portfolio/components) is reserved for future reusable HTML partials or templated sections if the project later adopts a component/include workflow.
+- [`index.html`](C:/Users/HP/Desktop/Projects/Github/Portfolio/index.html): Vite HTML entry with SEO metadata and font loading.
+- [`src/main.jsx`](C:/Users/HP/Desktop/Projects/Github/Portfolio/src/main.jsx): React mount entry.
+- [`src/App.jsx`](C:/Users/HP/Desktop/Projects/Github/Portfolio/src/App.jsx): assembles the full page and enables scroll reveal behavior.
+- [`src/components`](C:/Users/HP/Desktop/Projects/Github/Portfolio/src/components): reusable UI sections and interaction components.
+- [`src/data/portfolioData.js`](C:/Users/HP/Desktop/Projects/Github/Portfolio/src/data/portfolioData.js): text content, stats, skills, experience, projects, and floating tech labels.
+- [`src/data/socialLinks.js`](C:/Users/HP/Desktop/Projects/Github/Portfolio/src/data/socialLinks.js): centralized social and resume URLs.
+- [`src/hooks`](C:/Users/HP/Desktop/Projects/Github/Portfolio/src/hooks): small reusable animation hooks for typing text and counters.
+- [`src/styles/index.css`](C:/Users/HP/Desktop/Projects/Github/Portfolio/src/styles/index.css): all theme, layout, animation, and responsive styling.
+- [`public/zubair-hussain-resume.pdf`](C:/Users/HP/Desktop/Projects/Github/Portfolio/public/zubair-hussain-resume.pdf): downloadable resume asset.
 
-## How Everything Connects
+## How It Connects
 
-1. The browser loads [`index.html`](C:/Users/HP/Desktop/Projects/Github/Portfolio/index.html).
-2. `index.html` links to [`css/styles.css`](C:/Users/HP/Desktop/Projects/Github/Portfolio/css/styles.css) for all styling.
-3. `index.html` references images and downloadable files from the `assets/` directory.
-4. `index.html` loads the EmailJS CDN script and then [`js/main.js`](C:/Users/HP/Desktop/Projects/Github/Portfolio/js/main.js) for interactivity.
-5. The contact form is currently wired through EmailJS on the frontend. The PHP mail handler remains in the repository as a backend option.
+1. Vite serves [`index.html`](C:/Users/HP/Desktop/Projects/Github/Portfolio/index.html).
+2. `index.html` loads [`src/main.jsx`](C:/Users/HP/Desktop/Projects/Github/Portfolio/src/main.jsx).
+3. `main.jsx` renders [`src/App.jsx`](C:/Users/HP/Desktop/Projects/Github/Portfolio/src/App.jsx).
+4. `App.jsx` composes all page sections from `src/components`.
+5. Components pull text and links from `src/data`, keeping content easy to update without rewriting layout code.
+6. All visuals and animations are controlled from [`src/styles/index.css`](C:/Users/HP/Desktop/Projects/Github/Portfolio/src/styles/index.css).
 
-## Refactor Notes
+## Local Development
 
-- The visual design was intentionally preserved.
-- The page content remains in one HTML entry file to avoid introducing a templating/runtime dependency that could change how the site is served.
-- Comments were kept focused on section boundaries and behavior so the code stays readable without becoming noisy.
+```bash
+npm install
+npm run dev
+```
+
+## Production Build
+
+```bash
+npm run build
+```
+
+The output is generated in `dist/` and can be deployed directly to Netlify.
+
+## Netlify Deployment
+
+- Build command: `npm run build`
+- Publish directory: `dist`
+
+## Notes
+
+- This project is **frontend only**.
+- No PHP, server-side code, or backend dependency is required by the app.
+- Update placeholder social/contact values in [`src/data/socialLinks.js`](C:/Users/HP/Desktop/Projects/Github/Portfolio/src/data/socialLinks.js) when real links are available.
